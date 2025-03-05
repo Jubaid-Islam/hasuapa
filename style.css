@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#gameContainer {
+    position: relative;
+    width: 90vw;
+    max-width: 800px;
+}
+
+canvas {
+    background: url('cover.jpg') no-repeat center center / cover;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+#startButton {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#score, #coinScore, #highScore {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+#score {
+    top: 10px;
+    right: 20px;
+}
+
+#coinScore {
+    top: 10px;
+    left: 20px;
+}
+
+#highScore {
+    top: 40px;
+    right: 20px;
+}
+
+#soundToggle {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    canvas {
+        height: 200px; /* Adjust canvas height for smaller screens */
+    }
+
+    #startButton {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #score, #coinScore, #highScore {
+        font-size: 14px;
+    }
+
+    #soundToggle {
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+    }
+}
