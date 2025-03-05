@@ -89,7 +89,7 @@ canvas.addEventListener("touchstart", (event) => {
                 dino.velocityY = -8;
                 dino.jumpCount++;
             }
-        }, 10); // Wait 300ms to confirm it's not a double tap
+        }, 100); // Wait 300ms to confirm it's not a double tap
     }
 
     lastTapTime = currentTime;
