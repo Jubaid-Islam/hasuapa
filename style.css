@@ -6,8 +6,22 @@
 }
 
 body {
+    background: linear-gradient(to top, rgb(40, 75, 110), rgb(114, 180, 207));
+    ;
+    min-height: 100vh;
+
+}
+
+#name p {
+   text-align: right;
+   padding-right: 50px;
+   padding-top: 20px;
+   color: rgb(255, 245, 245);
+    font-weight: bold;
+}
+
+#main {
     text-align: center;
-    background-color: rgb(46, 88, 107);;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +30,7 @@ body {
 }
 
 #gameContainer {
+    
     position: relative;
     width: 90vw;
     max-width: 800px;
