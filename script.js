@@ -20,7 +20,7 @@ let coinScore = 0;
 let highScore = localStorage.getItem("highScore") || 0;
 let speedMultiplier = 1;
 let soundOn = true;
-highScoreDisplay.innerText = `High Score: ${90}`;
+highScoreDisplay.innerText = `High Score: ${highScore}`;
 
 // Load images
 const dinoImg = new Image();
@@ -89,7 +89,7 @@ canvas.addEventListener("touchstart", (event) => {
                 dino.velocityY = -8;
                 dino.jumpCount++;
             }
-        }, 100); // Wait 300ms to confirm it's not a double tap
+        }, 90); // Wait 300ms to confirm it's not a double tap
     }
 
     lastTapTime = currentTime;
