@@ -7,7 +7,7 @@
 
 body {
     background: linear-gradient(to top, rgb(40, 75, 110), rgb(114, 180, 207));
-    ;
+    display: flex;
 
 
 }
@@ -20,7 +20,7 @@ body {
     font-weight: bold;
 } */
 
-#main {
+#main-container {
     text-align: center;
     display: flex;
     justify-content: center;
