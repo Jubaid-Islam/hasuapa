@@ -12,13 +12,13 @@ body {
 
 }
 
-#name p {
+/* #name p {
    text-align: right;
    padding-right: 50px;
    padding-top: 20px;
    color: rgb(255, 245, 245);
     font-weight: bold;
-}
+} */
 
 #main {
     text-align: center;
