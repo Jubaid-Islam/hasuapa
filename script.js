@@ -10,8 +10,8 @@ const bgMusic = document.getElementById("bgMusic");
 const coinSound = document.getElementById("coinSound");
 const boomSound = document.getElementById("boomSound");
 
-canvas.width = 800;
-canvas.height = 300;
+canvas.width = 700;
+canvas.height =300;
 
 let gameRunning = false;
 let gameOver = false;
@@ -29,8 +29,8 @@ dinoImg.src = "hasina.png";
 const enemyImg = new Image();
 enemyImg.src = "enemy.png";
 
-const birdImg = new Image();
-birdImg.src = "bird.png";
+// const birdImg = new Image();
+// birdImg.src = "bird.png";
 
 const coinImg = new Image();
 coinImg.src = "coin.png";
@@ -52,7 +52,7 @@ const dino = {
 // Obstacles
 let obstacles = [
     { x: canvas.width, y: 220, width: 35, height: 40, img: enemyImg },
-    { x: canvas.width + 1600, y: 150, width: 40, height: 30, img: birdImg }
+    // { x: canvas.width + 1600, y: 90, width: 40, height: 30, img: birdImg }
 ];
 
 // Coins
@@ -89,7 +89,7 @@ canvas.addEventListener("touchstart", (event) => {
                 dino.velocityY = -8;
                 dino.jumpCount++;
             }
-        }, 90); // Wait 300ms to confirm it's not a double tap
+        }, 100); // Wait 300ms to confirm it's not a double tap
     }
 
     lastTapTime = currentTime;
@@ -175,7 +175,7 @@ function updateGame() {
             }
 
             if (score % 10 === 0) {
-                speedMultiplier += 0.1;
+                speedMultiplier += 0.2;
             }
         }
 
