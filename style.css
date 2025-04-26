@@ -7,26 +7,26 @@
 
 body {
     background: linear-gradient(to top, rgb(40, 75, 110), rgb(114, 180, 207));
-    display: flex;
-    justify-content: center;
-
+    ;
+    min-height: 100vh;
 
 }
 
-/* #name p {
-   text-align: right;
-   padding-right: 50px;
+#name p {
+   text-align: left;
+   padding-left: 30px;
    padding-top: 20px;
    color: rgb(255, 245, 245);
-    font-weight: bold;
-} */
+   font-weight: bold;
+}
 
-#main-container {
+
+#main {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 38px);
     overflow: hidden;
 }
 
@@ -41,7 +41,7 @@ canvas {
     background: url('cover.jpg') no-repeat center center / cover;
     display: block;
     width: 100%;
-    height: auto;
+    height: 40vh;
     border: 2px solid black;
 }
 
@@ -50,7 +50,7 @@ canvas {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px 30px;
+    padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -88,18 +88,17 @@ canvas {
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media screen and (max-height: 500px) and (orientation: landscape) {
     canvas {
-        height: 200px; /* Adjust canvas height for smaller screens */
+        height: 100vh; /* Fill the height of the screen in landscape */
     }
-
     #startButton {
         font-size: 16px;
-        padding: 10px 20px;
+        padding: 20px 20px;
     }
 
     #score, #coinScore, #highScore {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     #soundToggle {
